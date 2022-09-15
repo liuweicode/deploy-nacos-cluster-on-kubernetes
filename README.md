@@ -1,5 +1,7 @@
 # k8s 部署nacos
 
+![nacos-screenshot](attachments/nacos-screenshot.png)
+
 ## 1. 下载源码 2.1.1 版本
 
 ```shell
@@ -43,3 +45,4 @@ source nacos-2.1.1/distribution/conf/nacos-mysql.sql
 kubectl apply -f nacos.yaml
 ```
 
+![k9s-nacos](attachments/k9s-nacos.png)
