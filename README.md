@@ -24,9 +24,6 @@ source nacos-2.1.1/distribution/conf/nacos-mysql.sql
 
 ![修改数据库配置](attachments/db-config.png) 
 
-```shell
-kubectl apply -f nacos.yaml
-```
 
 ### 4.2 修改 replicas
 
@@ -40,4 +37,9 @@ kubectl apply -f nacos.yaml
 
 ![nacos-servers](attachments/nacos-servers.png)
 
+### 4.2 部署statefulset
+
+```shell
+kubectl apply -f nacos.yaml
+```
 
