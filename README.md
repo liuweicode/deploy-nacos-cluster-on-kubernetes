@@ -1,4 +1,4 @@
-![nacos-screenshot](https://raw.githubusercontent.com/liuweicode/deploy-nacos-cluster-on-kubernetes/main/img/nacos/nacos-screenshot.png)
+![nacos-screenshot](https://raw.githubusercontent.com/liuweicode/deploy-nacos-cluster-on-kubernetes/main/img/nacos-screenshot.png)
 
 ## 1. 下载源码 2.1.1 版本
 
@@ -22,7 +22,7 @@ source nacos-2.1.1/distribution/conf/nacos-mysql.sql
 
 ### 4.1 修改nacos.yaml
 
-![修改数据库配置](https://raw.githubusercontent.com/liuweicode/deploy-nacos-cluster-on-kubernetes/main/img/nacos/db-config.png) 
+![修改数据库配置](https://raw.githubusercontent.com/liuweicode/deploy-nacos-cluster-on-kubernetes/main/img/db-config.png) 
 
 
 ### 4.2 修改 replicas
@@ -33,9 +33,9 @@ source nacos-2.1.1/distribution/conf/nacos-mysql.sql
 
 - StatefulSets Pod YAML中ServiceName必须和其暴露SVC的名字一致，否则无法访问Pod域名;
 
-![config](https://raw.githubusercontent.com/liuweicode/deploy-nacos-cluster-on-kubernetes/main/img/nacos/config.png)
+![config](https://raw.githubusercontent.com/liuweicode/deploy-nacos-cluster-on-kubernetes/main/img/config.png)
 
-![nacos-servers](https://raw.githubusercontent.com/liuweicode/deploy-nacos-cluster-on-kubernetes/main/img/nacos/nacos-servers.png)
+![nacos-servers](https://raw.githubusercontent.com/liuweicode/deploy-nacos-cluster-on-kubernetes/main/img/nacos-servers.png)
 
 ### 4.2 部署statefulset
 
@@ -43,5 +43,5 @@ source nacos-2.1.1/distribution/conf/nacos-mysql.sql
 kubectl apply -f nacos.yaml
 ```
 
-![k9s-nacos](https://raw.githubusercontent.com/liuweicode/deploy-nacos-cluster-on-kubernetes/main/img/nacos/k9s-nacos.png)
+![k9s-nacos](https://raw.githubusercontent.com/liuweicode/deploy-nacos-cluster-on-kubernetes/main/img/k9s-nacos.png)
 
